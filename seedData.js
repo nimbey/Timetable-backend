@@ -1,9 +1,10 @@
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '.env') });
+
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const User = require('./models/User');
 const TimeSlot = require('./models/TimeSlot');
-require('dotenv').config();
-
 const connectDB = require('./config/db');
 
 const seedData = async () => {
