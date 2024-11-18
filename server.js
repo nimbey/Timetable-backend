@@ -3,6 +3,7 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 const path = require('path');
 const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
 
 console.log('Current directory:', __dirname);
 console.log('Env file path:', path.join(__dirname, '.env'));
